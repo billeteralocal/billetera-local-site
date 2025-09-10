@@ -229,4 +229,19 @@ html,body{margin:0;padding:0;color:var(--ink);font-family:Manrope,system-ui,-app
   font-weight: 800;               /* fuerte y visible */
   color: #2ecc71;                 /* verde dólar */
 }
+/* Botón de la calculadora */
+.calc-calc button {
+  background-color: #2ecc71;   /* verde dólar */
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;          /* un poco más grande */
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
 
+.calc-calc button:hover {
+  background-color: #27ae60;  /* tono más oscuro al pasar el mouse */
+}
