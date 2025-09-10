@@ -342,3 +342,13 @@ html,body{margin:0;padding:0;color:var(--ink);font-family:Manrope,system-ui,-app
 .calc-form input:focus{
   outline:none; border-color:#2ecc71; box-shadow:0 0 0 4px rgba(46,204,113,.18);
 }
+/* === Forzar estilo de títulos en la sección TASAS Y CALCULADORA === */
+/* Aplica a los h3 de las dos tarjetas (Referencia / Calculadora rápida) */
+#tasas .card-elev > h3,
+.rates-grid .card-elev > h3,
+.card-elev .card-title {
+  text-transform: uppercase !important;  /* TODO EN MAYÚSCULAS */
+  color: #2ecc71 !important;             /* verde dólar */
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
