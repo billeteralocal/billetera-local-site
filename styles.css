@@ -245,3 +245,50 @@ html,body{margin:0;padding:0;color:var(--ink);font-family:Manrope,system-ui,-app
 .calc-calc button:hover {
   background-color: #27ae60;  /* tono más oscuro al pasar el mouse */
 }
+/* ===== Calculadora (correcciones de selectores) ===== */
+
+/* TÍTULO en mayúsculas + verde dólar */
+.card-elev .card-title{
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #2ecc71; /* verde dólar */
+  margin-bottom: 1rem;
+}
+
+/* Labels y números más grandes */
+.calc-form label{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.calc-form .input,
+.calc-form input{
+  font-size: 1.25rem;   /* números más grandes */
+  padding: 12px 14px;
+}
+
+/* Botón en verde dólar coherente */
+.btn-primary{
+  background-color: #2ecc71;   /* verde dólar */
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background .25s ease;
+}
+
+.btn-primary:hover{
+  background-color: #27ae60;   /* más oscuro al hover */
+}
+
+/* Borde input al enfocar en verde dólar (opcional chévere) */
+.calc-form .input:focus,
+.calc-form input:focus{
+  outline: none;
+  border-color: #2ecc71;
+  box-shadow: 0 0 0 4px rgba(46,204,113,.18);
+}
