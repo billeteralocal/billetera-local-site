@@ -21,7 +21,10 @@ html,body{margin:0;padding:0;color:var(--ink);font-family:Manrope,system-ui,-app
 .brand{display:flex;align-items:center;gap:.8rem;text-decoration:none;color:inherit}
 .logo{width:52px;height:52px;object-fit:contain}
 .brand-title{font-family:Outfit,Manrope,sans-serif;font-weight:800;letter-spacing:.4px}
-.brand-sub{display:block;color:#6c7885;font-size:.82rem}
+.brand-sub {
+  color: #000000; /* negro */
+  font-weight: 500; /* opcional, puedes ajustarlo */
+}
 .top-nav{display:flex;gap:1.1rem;margin-left:auto;align-items:center}
 .top-nav a{color:#23303b;text-decoration:none;font-weight:700}
 .btn{display:inline-block;padding:.95rem 1.35rem;border-radius:14px;text-decoration:none;font-weight:800;letter-spacing:.3px;transition:.2s ease}
