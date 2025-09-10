@@ -221,3 +221,25 @@ html,body{margin:0;padding:0;color:var(--ink);font-family:Manrope,system-ui,-app
   font-size: 1.1rem;   /* texto del botón más grande */
   padding: 14px 20px;  /* botón más alto */
 }
+/* Sección Calculadora Rápida */
+.calc-form label {
+  font-size: 1.2rem;   /* más grande */
+  font-weight: 600;
+}
+
+.calc-form input {
+  font-size: 1.25rem;   /* números claramente más grandes */
+  padding: 12px 14px;   /* espacio interno cómodo */
+}
+
+.calc-form button {
+  font-size: 1.1rem;    
+  padding: 14px 20px;
+}
+
+/* Título de la calculadora */
+.calc-calc h3 {
+  text-transform: uppercase;  /* todo en mayúscula */
+  font-size: 1.4rem;          /* un poco más grande */
+  font-weight: 800;           /* fuerte y visible */
+}
