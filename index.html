@@ -120,15 +120,47 @@
         </ul>
       </div>
 
-      <div class="calc-card">
-        <h3>Calculadora rápida</h3>
-        <form id="calc-form">
-          <label>Monto (USD)<input id="monto" type="number" min="10" step="10" value="200" required></label>
-          <label>Interés mensual (%)<input id="interes" type="number" min="1" step="0.5" value="10" required></label>
-          <label>Meses<input id="meses" type="number" min="1" max="12" step="1" value="3" required></label>
-          <button type="submit" class="btn btn-secondary">Calcular</button>
+      <section id="tasas" class="section">
+  <div class="container">
+    <h2>Tasas y calculadora</h2>
+
+    <div class="rates-grid pro-grid">
+      <!-- Card: Referencia -->
+      <div class="card-elev">
+        <h3 class="card-title">Referencia</h3>
+        <ul class="ref-list">
+          <li>Interés mensual: <strong>personalizable</strong></li>
+          <li>Plazo: <strong>30–90 días</strong></li>
+          <li>Sin cargos ocultos</li>
+        </ul>
+        <p class="note">La tasa final se define según el bien, estado y plazo.</p>
+      </div>
+
+      <!-- Card: Calculadora -->
+      <div class="card-elev">
+        <h3 class="card-title">Calculadora rápida</h3>
+        <form id="calc-form" class="calc-form">
+          <label class="input-group">
+            <span>Monto (USD)</span>
+            <input class="input" id="monto" type="number" min="10" step="10" value="200" required>
+          </label>
+
+          <label class="input-group">
+            <span>Interés mensual (%)</span>
+            <input class="input" id="interes" type="number" min="1" step="0.5" value="10" required>
+          </label>
+
+          <label class="input-group">
+            <span>Meses</span>
+            <input class="input" id="meses" type="number" min="1" max="12" step="1" value="3" required>
+          </label>
+
+          <div class="calc-actions">
+            <button type="submit" class="btn btn-primary">Calcular</button>
+          </div>
         </form>
-        <p id="resultado"></p>
+
+        <div id="resultado" class="result-box" aria-live="polite"></div>
       </div>
     </div>
   </div>
