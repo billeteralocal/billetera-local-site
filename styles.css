@@ -156,3 +156,32 @@ html,body{margin:0;padding:0;color:var(--ink);font-family:Manrope,system-ui,-app
   background-size: 340px; /* iconos más grandes y espaciados */
   pointer-events: none;   /* no interfiere al hacer clic */
 }
+/* ---- Sección Ventajas ---- */
+.ventajas {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.ventajas-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--gold);
+  margin-bottom: 2rem;
+  text-transform: uppercase; /* MAYÚSCULAS */
+}
+
+.ventajas-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 1.5rem;
+  max-width: 800px;
+}
+
+.ventajas-list li {
+  font-size: 1.25rem; /* Más grande */
+  color: #fff;
+  font-weight: 600;
+}
