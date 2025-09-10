@@ -142,3 +142,17 @@ html,body{margin:0;padding:0;color:var(--ink);font-family:Manrope,system-ui,-app
 }
 /* armonizar títulos/separaciones */
 #tasas h2{margin-bottom:1.25rem}
+/* Espaciado extra y fondo más suave */
+.section {
+  padding: 88px 0;   /* más aire entre secciones */
+}
+
+.hero {
+  padding: 96px 0;   /* más aire arriba/bajo el eslogan */
+}
+
+.pattern {
+  opacity: .07;          /* fondo mucho más sutil */
+  background-size: 340px; /* iconos más grandes y espaciados */
+  pointer-events: none;   /* no interfiere al hacer clic */
+}
