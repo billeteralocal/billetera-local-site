@@ -206,4 +206,18 @@ html,body{margin:0;padding:0;color:var(--ink);font-family:Manrope,system-ui,-app
   font-size: 1.4rem;
   font-weight: bold;
 }
+/* Estilos para la calculadora rápida */
+.calc-form label {
+  font-size: 1.1rem; /* etiquetas un poco más grandes */
+  font-weight: 600;
+}
 
+.calc-form input {
+  font-size: 1.2rem;   /* números más grandes */
+  padding: 12px 14px;  /* más espacio interno */
+}
+
+.calc-form button {
+  font-size: 1.1rem;   /* texto del botón más grande */
+  padding: 14px 20px;  /* botón más alto */
+}
