@@ -307,16 +307,14 @@ html,body{margin:0;padding:0;color:var(--ink);font-family:Manrope,system-ui,-app
   margin-bottom: 1rem;
 }
 
-/* 1ª tarjeta (Referencia): color original y en MAYÚSCULAS */
-.rates-grid .card-elev:first-child .card-title{
-  color: #1b2b3a;                     /* color que estaba antes */
-  text-transform: uppercase;          /* REFERENCIA */
-}
-
-/* 2ª tarjeta (Calculadora rápida): Capitalize + verde dólar */
-.rates-grid .card-elev:nth-child(2) .card-title{
-  text-transform: capitalize;         /* Calculadora Rápida */
-  color: #2ecc71;                     /* verde dólar */
+/* Títulos de la sección "Tasas y Calculadora" */
+.calc-card h3,
+.calc-calc h3 {
+  text-transform: uppercase;   /* todo en MAYÚSCULAS */
+  font-size: 1.6rem;           /* tamaño uniforme */
+  font-weight: 800;            /* más fuerte */
+  color: #2ecc71;              /* verde dólar */
+  margin-bottom: 1rem;
 }
 
 /* ====== TEXTOS MÁS GRANDES EN LA CALCULADORA ====== */
@@ -343,13 +341,4 @@ html,body{margin:0;padding:0;color:var(--ink);font-family:Manrope,system-ui,-app
 .calc-form .input:focus,
 .calc-form input:focus{
   outline:none; border-color:#2ecc71; box-shadow:0 0 0 4px rgba(46,204,113,.18);
-}
-/* Títulos de la sección "Tasas y Calculadora" */
-.calc-card h3,
-.calc-calc h3 {
-  text-transform: uppercase;   /* todo en MAYÚSCULAS */
-  font-size: 1.6rem;           /* tamaño uniforme */
-  font-weight: 800;            /* más fuerte */
-  color: #2ecc71;              /* verde dólar */
-  margin-bottom: 1rem;
 }
