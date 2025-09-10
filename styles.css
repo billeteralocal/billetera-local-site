@@ -107,3 +107,38 @@ html,body{margin:0;padding:0;color:var(--ink);font-family:Manrope,system-ui,-app
   font-weight:900; color:#F2C94C; font-size:1.3rem;
 }
 .section-dark h2{font-size:2rem;margin-bottom:1.2rem}
+/* grid para tasas */
+.pro-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+@media (max-width:1060px){.pro-grid{grid-template-columns:1fr}}
+
+/* tarjetas elevadas */
+.card-elev{
+  background:#fff;border:1px solid #e8eef5;border-radius:18px;
+  padding:22px 22px;border-radius:18px;
+  box-shadow:0 10px 34px rgba(2,8,20,.06);
+}
+.card-title{margin:.2rem 0 1rem;font-size:1.25rem}
+.ref-list{padding-left:1.1rem;margin:0 0 .6rem}
+.ref-list li{margin:.25rem 0;font-size:1.02rem}
+
+/* inputs modernos */
+.input-group{display:flex;flex-direction:column;gap:.35rem;margin-bottom:.85rem}
+.input-group > span{font-weight:700;color:#2a3847;font-size:.92rem}
+.input{
+  width:100%;height:48px;border:1.6px solid #dfe7f1;border-radius:12px;
+  padding:0 14px;font-weight:700;background:#fff;color:#12202e;
+}
+.input:focus{
+  outline:none;border-color:#7dd3bf; box-shadow:0 0 0 4px rgba(125,211,191,.18);
+}
+
+/* acción y resultado */
+.calc-actions{margin-top:.6rem}
+.btn-primary{background:#0f766e;color:#fff;border:2px solid #0a5e58}
+.btn-primary:hover{filter:brightness(.98)}
+.result-box{
+  margin-top:1rem;background:#f8fffc;border:1px solid #cfeee4;color:#0c3d36;
+  padding:14px;border-radius:12px;font-weight:700
+}
+/* armonizar títulos/separaciones */
+#tasas h2{margin-bottom:1.25rem}
