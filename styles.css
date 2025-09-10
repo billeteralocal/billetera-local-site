@@ -292,3 +292,55 @@ html,body{margin:0;padding:0;color:var(--ink);font-family:Manrope,system-ui,-app
   border-color: #2ecc71;
   box-shadow: 0 0 0 4px rgba(46,204,113,.18);
 }
+/* ====== TITULAR DE SECCIÓN ====== */
+#tasas h2{
+  text-transform: uppercase;          /* TASAS Y CALCULADORA en MAYÚSCULAS */
+}
+
+/* ====== TÍTULOS DE LAS TARJETAS ======
+   Quitamos reglas anteriores y definimos cada una como pides  */
+.card-elev .card-title{
+  text-transform: none;               /* por defecto normal */
+  color: #1b2b3a;                     /* color “ink” / negro azulado */
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+/* 1ª tarjeta (Referencia): color original y en MAYÚSCULAS */
+.rates-grid .card-elev:first-child .card-title{
+  color: #1b2b3a;                     /* color que estaba antes */
+  text-transform: uppercase;          /* REFERENCIA */
+}
+
+/* 2ª tarjeta (Calculadora rápida): Capitalize + verde dólar */
+.rates-grid .card-elev:nth-child(2) .card-title{
+  text-transform: capitalize;         /* Calculadora Rápida */
+  color: #2ecc71;                     /* verde dólar */
+}
+
+/* ====== TEXTOS MÁS GRANDES EN LA CALCULADORA ====== */
+.calc-form .input-group > span{
+  font-size: 1.25rem;                 /* Monto / Interés mensual / Meses */
+  font-weight: 700;
+}
+
+.calc-form .input,
+.calc-form input{
+  font-size: 1.25rem;                 /* números más grandes */
+  padding: 12px 14px;
+}
+
+/* Botón verde dólar coherente */
+.btn-primary{
+  background-color:#2ecc71; border:none; color:#fff;
+  font-size:1.1rem; font-weight:700; padding:12px 28px;
+  border-radius:10px; cursor:pointer; transition:background .25s ease;
+}
+.btn-primary:hover{ background:#27ae60; }
+
+/* Enfoque de inputs en verde dólar (detalle pro) */
+.calc-form .input:focus,
+.calc-form input:focus{
+  outline:none; border-color:#2ecc71; box-shadow:0 0 0 4px rgba(46,204,113,.18);
+}
