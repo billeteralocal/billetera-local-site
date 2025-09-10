@@ -78,3 +78,19 @@ html,body{margin:0;padding:0;color:var(--ink);font-family:Manrope,system-ui,-app
   .section-cards .cards{grid-template-columns:1fr}
   .btn{padding:.9rem 1.15rem}
 }
+/* Steps bonitos */
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+.step{padding:1.6rem 1.4rem;border-radius:16px;border:1px solid #e9eef5;box-shadow:0 6px 24px rgba(2,8,20,.04);text-align:center}
+.step h3{margin:.8rem 0 .4rem;font-size:1.25rem}
+.step p{margin:0;color:#3b4654;font-size:1rem;line-height:1.5}
+.step-icon{width:72px;height:72px;margin:0 auto .8rem;border-radius:16px;display:grid;place-items:center;font-size:34px;font-weight:700;color:#0f2e2b}
+
+/* colores distintos por tarjeta */
+.step.c1 .step-icon{background:#E7F7FF;border:1px solid #cfefff}
+.step.c2 .step-icon{background:#FFF4DF;border:1px solid #ffe3b3}
+.step.c3 .step-icon{background:#EAF5FF;border:1px solid #d7eaff}
+.step.c4 .step-icon{background:#E8FFF3;border:1px solid #c9f7e5}
+
+/* responsive */
+@media (max-width:1060px){.steps-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.steps-grid{grid-template-columns:1fr}}
