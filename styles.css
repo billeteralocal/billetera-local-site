@@ -114,6 +114,7 @@ pointer-events: none;
   background-repeat: repeat;
   opacity: .16;
 }
+pointer-events: none;
 
 /* Responsive */
 @media (max-width:980px){
