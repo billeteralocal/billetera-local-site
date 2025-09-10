@@ -8,7 +8,16 @@
 .btn-whatsapp{background:var(--mint-strong);color:#083327;border:2px solid #63cfb1}.btn-secondary{background:linear-gradient(180deg,#f7f8fa,#ffffff);color:#0f2e28;border:2px solid #dbe5ee}
 .nav-toggle{display:none;border:0;background:transparent;font-size:1.4rem}.hero{position:relative;overflow:hidden}
 .hero-silver{background:linear-gradient(145deg,var(--silver-bright),var(--silver-light) 60%, #E7EBF2);} .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:2rem;align-items:center;padding:64px 0 88px}
-.slogan{font-family:Outfit,Manrope,sans-serif;font-weight:900;font-size:clamp(1.8rem,3.4vw,2.8rem);line-height:1.15;margin:0 0 .6rem}.hl-1{color:#1b2b3a}.hl-2{color:var(--gold)}.hero p{color:#3a4b5a;margin:0 0 1.1rem}
+.slogan{
+  font-family: Outfit, Manrope, sans-serif;
+  font-weight: 900;
+  font-size: clamp(2rem,3.6vw,3rem);
+  line-height: 1.1;
+  letter-spacing: .5px;
+  margin: 0 0 .6rem;
+}
+.slogan .hl-1{ display:block; color:#1b2b3a; margin-bottom:.12em; }
+.slogan .hl-2{ display:block; color:#D4AF37; }
 .cta-row{display:flex;flex-wrap:wrap;gap:.8rem}.badges{margin-top:.8rem;display:flex;gap:.5rem;flex-wrap:wrap}
 .badge{background:#ffffffd9;border:1px solid #e2e8f0;color:#3a4b5a;border-radius:999px;padding:.38rem .7rem;font-weight:800;font-size:.85rem}
 .hero-logo{width:100%;max-width:360px;display:block;margin:0 auto;filter:drop-shadow(0 10px 18px rgba(0,0,0,.12))}
