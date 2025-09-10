@@ -1,4 +1,61 @@
-document.querySelector('.nav-toggle').addEventListener('click',()=>{document.getElementById('topNav').classList.toggle('open');});
-document.getElementById('year')?.textContent=new Date().getFullYear();
-const form=document.getElementById('calc-form');const out=document.getElementById('calc-result');
-form?.addEventListener('submit',(e)=>{e.preventDefault();const P=parseFloat(document.getElementById('monto').value||0);const rate=parseFloat(document.getElementById('tasa').value||0)/100;const n=parseInt(document.getElementById('meses').value||1,10);const interest=P*rate*n;const total=P+interest;out.innerHTML=`<div class='result-box' style='background:#f7fbf9;border:1px solid #dfe9e4;border-radius:12px;padding:.75rem'><div><strong>Monto:</strong> $${P.toFixed(2)}</div><div><strong>Interés estimado (${(rate*100).toFixed(1)}% x ${n} mes(es)):</strong> $${interest.toFixed(2)}</div><div style='font-weight:900;color:#0f2132;margin-top:.35rem'><strong>Total a pagar:</strong> $${total.toFixed(2)}</div></div>`;});
+// ---------- UI base ----------
+document.addEventListener("DOMContentLoaded", () => {
+  // Menú móvil (si existe el botón)
+  const navToggle = document.querySelector(".nav-toggle");
+  const topNav = document.getElementById("topNav");
+  if (navToggle && topNav) {
+    navToggle.addEventListener("click", () => {
+      topNav.classList.toggle("open");
+    });
+  }
+
+  // Año en el footer (si existe)
+  const yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // ---------- Calculadora ----------
+  const form = document.getElementById("calc-form");
+  if (!form) return; // si no existe el form, no hacemos nada
+
+  const montoEl   = document.getElementById("monto");
+  const interesEl = document.getElementById("interes");
+  const mesesEl   = document.getElementById("meses");
+
+  // Cuadro de resultado: acepta #resultado o #calc-result (para ser compatibles)
+  const out =
+    document.getElementById("resultado") ||
+    document.getElementById("calc-result");
+
+  const money = (n) =>
+    n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 2 });
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault(); // evita el salto a la parte superior
+
+    const P = parseFloat(montoEl?.value || "0");
+    const r = parseFloat(interesEl?.value || "0");
+    const m = parseInt(mesesEl?.value || "0", 10);
+
+    if (!out) return;
+
+    if (isNaN(P) || isNaN(r) || isNaN(m) || P <= 0 || r <= 0 || m <= 0) {
+      out.innerHTML = `<strong>Verifica los valores ingresados.</strong>`;
+      return;
+    }
+
+    // Interés simple mensual (estimación)
+    const interesTotal = P * (r / 100) * m;
+    const total        = P + interesTotal;
+    const cuota        = total / m;
+
+    out.innerHTML = `
+      <div><strong>Total estimado:</strong> ${money(total)}</div>
+      <div><strong>Interés total:</strong> ${money(interesTotal)}</div>
+      <div><strong>Cuota mensual aprox.:</strong> ${money(cuota)}</div>
+      <small>Estimación informativa. La oferta final puede variar según el bien y el plazo.</small>
+    `;
+
+    // (Opcional) desplazar suave al resultado si estás en móvil
+    out.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  });
+});
