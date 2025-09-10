@@ -224,7 +224,9 @@ html,body{margin:0;padding:0;color:var(--ink);font-family:Manrope,system-ui,-app
 
 /* Título de la calculadora */
 .calc-calc h3 {
-  text-transform: uppercase;  /* todo en mayúscula */
-  font-size: 1.4rem;          /* un poco más grande */
-  font-weight: 800;           /* fuerte y visible */
+  text-transform: uppercase;      /* todo en mayúscula */
+  font-size: 1.6rem;              /* un poco más grande */
+  font-weight: 800;               /* fuerte y visible */
+  color: #2ecc71;                 /* verde dólar */
 }
+
