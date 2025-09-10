@@ -1,0 +1,20 @@
+document.querySelector('.nav-toggle').addEventListener('click',()=>{
+  document.getElementById('topNav').classList.toggle('open');
+});
+document.getElementById('year')?.textContent = new Date().getFullYear();
+
+const form = document.getElementById('calc-form');
+const out = document.getElementById('calc-result');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const P = parseFloat(document.getElementById('monto').value || 0);
+  const rate = parseFloat(document.getElementById('tasa').value || 0) / 100;
+  const n = parseInt(document.getElementById('meses').value || 1, 10);
+  const interest = P * rate * n;
+  const total = P + interest;
+  out.innerHTML = `<div class='result-box' style='background:#f7fbf9;border:1px solid #dfe9e4;border-radius:12px;padding:.75rem'>
+    <div><strong>Monto:</strong> $${P.toFixed(2)}</div>
+    <div><strong>Interés estimado (${(rate*100).toFixed(1)}% x ${n} mes(es)):</strong> $${interest.toFixed(2)}</div>
+    <div style='font-weight:900;color:#0f2132;margin-top:.35rem'><strong>Total a pagar:</strong> $${total.toFixed(2)}</div>
+  </div>`;
+});
