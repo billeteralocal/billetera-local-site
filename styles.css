@@ -32,8 +32,18 @@ html,body{margin:0;padding:0;color:var(--ink);font-family:Manrope,system-ui,-app
 .hero-silver{background:linear-gradient(145deg,var(--silver-bright),var(--silver-light) 58%,#EAEFF5)}
 .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
 .slogan{font-family:Outfit,Manrope,sans-serif;font-weight:900;font-size:clamp(2.2rem,3.8vw,3.2rem);line-height:1.15;margin:0 0 1.1rem}
-.slogan .hl-1{display:block;color:#182433}
-.slogan .hl-2{display:block;color:var(--gold)}
+.slogan .hl-1 {
+  display: inline;
+  font-size: 2rem;   /* más pequeño */
+  color: #1b2b3a;    /* gris oscuro */
+}
+
+.slogan .hl-2 {
+  display: inline;
+  font-size: 2.6rem; /* más grande */
+  color: #D4AF37;    /* dorado */
+}
+
 .lead{font-size:1.05rem;color:#344355;margin:0 0 1.4rem}
 .cta-row{display:flex;flex-wrap:wrap;gap:1rem;margin:0 0 1.2rem}
 .btn-whatsapp{background:var(--mint-strong);color:#083327;border:2px solid #63cfb1}
