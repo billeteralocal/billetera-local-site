@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BILLETERA LOCAL – Casa de Empeño</title>
+<meta name="description" content="Transforma lo que tienes en lo que necesitas. Empeños rápidos, seguros y transparentes.">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <img src="assets/logo.svg" alt="Logo Billetera Local" class="logo">
+    <div class="brand">
+      <h1>BILLETERA LOCAL</h1>
+      <p>Casa de Empeño</p>
+    </div>
+    <nav>
+      <a href="#como">Cómo funciona</a>
+      <a href="#tasas">Tasas</a>
+      <a href="#contacto" class="btn">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="copy">
+      <h2>Dinero en minutos, <span class="accent">seguro y cercano</span>.</h2>
+      <p>Oferta rápida, contrato claro y atención amable. Sin complicaciones.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://wa.me/19804012415" target="_blank" rel="noopener">WhatsApp: +1 980 401 2415</a>
+        <a class="btn" href="mailto:BilleteraLocal@gmail.com">BilleteraLocal@gmail.com</a>
+      </div>
+    </div>
+    <img src="assets/logo.svg" alt="Logo" class="hero-logo">
+  </div>
+</section>
+
+<section id="como" class="section">
+  <div class="wrap">
+    <h3>¿Cómo funciona?</h3>
+    <ol class="steps">
+      <li>Envíanos fotos por WhatsApp o correo.</li>
+      <li>Evaluamos estado y autenticidad.</li>
+      <li>Contrato simple y pago inmediato.</li>
+      <li>Recupera cuando quieras (opciones flexibles).</li>
+    </ol>
+  </div>
+</section>
+
+<section id="tasas" class="section alt">
+  <div class="wrap">
+    <h3>Tasas y calculadora</h3>
+    <form id="calc">
+      <label>Monto (USD) <input id="monto" type="number" value="200" min="10" step="10"></label>
+      <label>Interés mensual (%) <input id="tasa" type="number" value="8" min="0" step="0.1"></label>
+      <label>Meses <input id="meses" type="number" value="2" min="1" max="12"></label>
+      <button type="submit" class="btn primary">Calcular</button>
+    </form>
+    <div id="res"></div>
+  </div>
+</section>
+
+<section id="contacto" class="section">
+  <div class="wrap">
+    <h3>Contacto</h3>
+    <p>Escríbenos y recibe tu oferta en minutos.</p>
+    <p>📱 <a href="https://wa.me/19804012415" target="_blank">+1 980 401 2415</a><br>
+       📧 <a href="mailto:BilleteraLocal@gmail.com">BilleteraLocal@gmail.com</a></p>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">© <span id="y"></span> BILLETERA LOCAL — Casa de Empeño</div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
