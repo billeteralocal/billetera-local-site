@@ -94,3 +94,16 @@ html,body{margin:0;padding:0;color:var(--ink);font-family:Manrope,system-ui,-app
 /* responsive */
 @media (max-width:1060px){.steps-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:640px){.steps-grid{grid-template-columns:1fr}}
+/* Features más grandes y legibles */
+.section-dark .grid-2{
+  display:grid;grid-template-columns:1fr 1fr;gap:2rem;row-gap:1.4rem;
+  max-width:1000px;margin-inline:auto;
+}
+.section-dark .grid-2 li{
+  font-size:1.18rem;line-height:1.6;list-style:none;position:relative;padding-left:1.8rem
+}
+.section-dark .grid-2 li::before{
+  content:"✓"; position:absolute; left:.2rem; top:.05rem;
+  font-weight:900; color:#F2C94C; font-size:1.3rem;
+}
+.section-dark h2{font-size:2rem;margin-bottom:1.2rem}
