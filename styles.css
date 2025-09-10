@@ -166,8 +166,8 @@ html,body{margin:0;padding:0;color:var(--ink);font-family:Manrope,system-ui,-app
   font-size: 2rem;
   font-weight: 900;
   color: var(--gold);
-  margin-bottom: 2rem;
-  text-transform: uppercase; /* MAYÚSCULAS */
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
 }
 
 .ventajas-list {
@@ -176,12 +176,24 @@ html,body{margin:0;padding:0;color:var(--ink);font-family:Manrope,system-ui,-app
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 columnas */
-  gap: 1.5rem;
-  max-width: 800px;
+  gap: 1.8rem 3rem;
+  max-width: 900px;
+  justify-content: center;
 }
 
 .ventajas-list li {
-  font-size: 1.25rem; /* Más grande */
+  font-size: 1.3rem;
   color: #fff;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
 }
+
+.ventajas-list .check {
+  color: var(--gold); /* ✔ dorado */
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
