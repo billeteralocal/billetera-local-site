@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>BILLETERA LOCAL – Casa de Empeño</title>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
@@ -27,31 +27,20 @@
       <a href="#contacto" class="btn btn-ghost">Contacto</a>
     </nav>
 
-    <!-- 🔹 Botones arriba -->
-    <div class="header-cta">
-      <a href="https://wa.me/19804012415" target="_blank" rel="noopener" class="btn btn-sm btn-whatsapp">
-        WhatsApp
-      </a>
-      <a href="mailto:BilleteraLocal@gmail.com" class="btn btn-sm btn-ghost">
-        Email
-      </a>
-    </div>
-
     <button class="nav-toggle" aria-label="Abrir menú" aria-controls="topNav">☰</button>
   </div>
 </header>
 
-<!-- HERO -->
 <section class="hero hero-silver">
   <div class="container">
     <div class="hero-grid">
-      <!-- Columna izquierda -->
       <div class="hero-copy">
         <h1 class="slogan">
           <span class="hl-1">TRANSFORMA LO QUE TIENES</span>
           <span class="hl-2">EN LO QUE NECESITAS</span>
         </h1>
-        <p>Oferta rápida, contrato claro y custodia protegida. Sin complicaciones.</p>
+
+        <p class="lead">Oferta rápida, contrato claro y custodia protegida. Sin complicaciones.</p>
 
         <div class="cta-row">
           <a href="https://wa.me/19804012415" target="_blank" rel="noopener" class="btn btn-whatsapp">WhatsApp: +1 980 401 2415</a>
@@ -65,18 +54,15 @@
         </div>
       </div>
 
-      <!-- Columna derecha -->
       <div class="hero-art">
         <img src="logo.svg" alt="Logo Billetera Local" class="hero-logo">
       </div>
     </div>
   </div>
 
-  <!-- Fondo de íconos -->
   <div class="pattern"></div>
 </section>
 
-<!-- Secciones -->
 <section id="como" class="section section-cards">
   <div class="container">
     <h2>¿Cómo funciona?</h2>
@@ -113,6 +99,7 @@
           <li>Sin cargos ocultos</li>
         </ul>
       </div>
+
       <div class="calc-card">
         <h3>Calculadora rápida</h3>
         <form id="calc-form">
@@ -133,4 +120,20 @@
     <p>Resolvemos tu necesidad de efectivo con rapidez y seguridad.</p>
     <div class="cta-row">
       <a class="btn btn-whatsapp" href="https://wa.me/19804012415" target="_blank" rel="noopener">WhatsApp: +1 980 401 2415</a>
-      <a cl
+      <a class="btn btn-secondary" href="mailto:BilleteraLocal@gmail.com">BilleteraLocal@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>BILLETERA LOCAL</strong> — Casa de Empeño<br>
+      © <span id="year"></span> Todos los derechos reservados.
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
