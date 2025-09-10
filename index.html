@@ -1,80 +1,148 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>BILLETERA LOCAL – Casa de Empeño</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BILLETERA LOCAL — Casa de Empeño</title>
 <meta name="description" content="Transforma lo que tienes en lo que necesitas. Empeños rápidos, seguros y transparentes.">
-<link rel="stylesheet" href="styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="top">
-  <div class="wrap">
-    <img src="assets/logo.svg" alt="Logo Billetera Local" class="logo">
-    <div class="brand">
-      <h1>BILLETERA LOCAL</h1>
-      <p>Casa de Empeño</p>
-    </div>
-    <nav>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#">
+      <img src="assets/logo.png" alt="Logo Billetera Local" class="logo" onerror="this.src='assets/logo-fallback.svg'">
+      <div class="brand-text">
+        <span class="brand-title">BILLETERA LOCAL</span>
+        <span class="brand-sub">Casa de Empeño</span>
+      </div>
+    </a>
+    <nav class="top-nav" id="topNav">
       <a href="#como">Cómo funciona</a>
+      <a href="#ventajas">Ventajas</a>
       <a href="#tasas">Tasas</a>
-      <a href="#contacto" class="btn">Contacto</a>
+      <a href="#contacto" class="btn btn-ghost">Contacto</a>
     </nav>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-controls="topNav">☰</button>
   </div>
 </header>
 
 <section class="hero">
-  <div class="wrap">
-    <div class="copy">
-      <h2>Dinero en minutos, <span class="accent">seguro y cercano</span>.</h2>
-      <p>Oferta rápida, contrato claro y atención amable. Sin complicaciones.</p>
-      <div class="cta">
-        <a class="btn primary" href="https://wa.me/19804012415" target="_blank" rel="noopener">WhatsApp: +1 980 401 2415</a>
-        <a class="btn" href="mailto:BilleteraLocal@gmail.com">BilleteraLocal@gmail.com</a>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <h1><span class="thin">Dinero en minutos,</span> <span class="accent">seguro y cercano.</span></h1>
+      <p>Oferta rápida, contrato claro y custodia protegida. Sin complicaciones.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://wa.me/19804012415" target="_blank" rel="noopener">WhatsApp: +1 980 401 2415</a>
+        <a class="btn btn-secondary" href="mailto:BilleteraLocal@gmail.com">BilleteraLocal@gmail.com</a>
+      </div>
+      <div class="badges">
+        <span class="badge">Rápido</span>
+        <span class="badge">Seguro</span>
+        <span class="badge">Transparente</span>
       </div>
     </div>
-    <img src="assets/logo.svg" alt="Logo" class="hero-logo">
+    <div class="hero-art">
+      <img src="assets/logo.png" alt="Logo Billetera Local" class="hero-logo" onerror="this.src='assets/logo-fallback.svg'">
+    </div>
+  </div>
+  <div class="pattern"></div>
+</section>
+
+<section id="como" class="section section-cards">
+  <div class="container">
+    <h2>¿Cómo funciona?</h2>
+    <div class="cards">
+      <article class="card">
+        <div class="icon">📸</div>
+        <h3>1. Envíanos fotos</h3>
+        <p>WhatsApp o correo con fotos y descripción. Oferta inicial en minutos.</p>
+      </article>
+      <article class="card">
+        <div class="icon">🧾</div>
+        <h3>2. Evaluación</h3>
+        <p>Revisamos estado y autenticidad. Todo documentado y claro.</p>
+      </article>
+      <article class="card">
+        <div class="icon">🤝</div>
+        <h3>3. Contrato & pago</h3>
+        <p>Firma simple y pago inmediato. Custodia segura del artículo.</p>
+      </article>
+      <article class="card">
+        <div class="icon">🔄</div>
+        <h3>4. Recupera cuando quieras</h3>
+        <p>Renovación o liquidación flexible. Sin sorpresas.</p>
+      </article>
+    </div>
   </div>
 </section>
 
-<section id="como" class="section">
-  <div class="wrap">
-    <h3>¿Cómo funciona?</h3>
-    <ol class="steps">
-      <li>Envíanos fotos por WhatsApp o correo.</li>
-      <li>Evaluamos estado y autenticidad.</li>
-      <li>Contrato simple y pago inmediato.</li>
-      <li>Recupera cuando quieras (opciones flexibles).</li>
-    </ol>
+<section id="ventajas" class="section section-dark">
+  <div class="container">
+    <h2>Lo que nos hace diferentes</h2>
+    <ul class="grid-2">
+      <li>✔ Tasas claras y competitivas.</li>
+      <li>✔ Atención humana y cercana.</li>
+      <li>✔ Proceso ágil y digital.</li>
+      <li>✔ Seguridad y contrato formal.</li>
+    </ul>
   </div>
 </section>
 
-<section id="tasas" class="section alt">
-  <div class="wrap">
-    <h3>Tasas y calculadora</h3>
-    <form id="calc">
-      <label>Monto (USD) <input id="monto" type="number" value="200" min="10" step="10"></label>
-      <label>Interés mensual (%) <input id="tasa" type="number" value="8" min="0" step="0.1"></label>
-      <label>Meses <input id="meses" type="number" value="2" min="1" max="12"></label>
-      <button type="submit" class="btn primary">Calcular</button>
-    </form>
-    <div id="res"></div>
+<section id="tasas" class="section">
+  <div class="container">
+    <h2>Tasas y calculadora</h2>
+    <div class="rates-grid">
+      <div class="rate-card">
+        <h3>Referencia</h3>
+        <ul>
+          <li>Interés mensual: <strong>personalizable</strong></li>
+          <li>Plazo: <strong>30–90 días</strong></li>
+          <li>Sin cargos ocultos</li>
+        </ul>
+        <p>La tasa final se confirma al evaluar cada artículo.</p>
+      </div>
+      <div class="calc-card">
+        <h3>Calculadora rápida</h3>
+        <form id="calc-form">
+          <label>Monto (USD)<input id="monto" type="number" min="10" step="10" value="200" required></label>
+          <label>Interés mensual (%)<input id="tasa" type="number" min="0" step="0.1" value="8"></label>
+          <label>Meses<input id="meses" type="number" min="1" max="12" step="1" value="2"></label>
+          <button class="btn btn-primary" type="submit">Calcular</button>
+        </form>
+        <div id="calc-result" class="calc-result" aria-live="polite"></div>
+        <small class="muted">* Estimación referencial. No constituye oferta final.</small>
+      </div>
+    </div>
   </div>
 </section>
 
-<section id="contacto" class="section">
-  <div class="wrap">
-    <h3>Contacto</h3>
-    <p>Escríbenos y recibe tu oferta en minutos.</p>
-    <p>📱 <a href="https://wa.me/19804012415" target="_blank">+1 980 401 2415</a><br>
-       📧 <a href="mailto:BilleteraLocal@gmail.com">BilleteraLocal@gmail.com</a></p>
+<section id="contacto" class="section section-cta">
+  <div class="container contact">
+    <h2>¡Hablemos ahora!</h2>
+    <p>Resolvemos tu necesidad de efectivo con rapidez y seguridad.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://wa.me/19804012415" target="_blank" rel="noopener">WhatsApp: +1 980 401 2415</a>
+      <a class="btn btn-secondary" href="mailto:BilleteraLocal@gmail.com">BilleteraLocal@gmail.com</a>
+    </div>
   </div>
 </section>
 
-<footer class="foot">
-  <div class="wrap">© <span id="y"></span> BILLETERA LOCAL — Casa de Empeño</div>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><strong>BILLETERA LOCAL</strong> — Casa de Empeño<br>© <span id="year"></span> Todos los derechos reservados.</div>
+    <div class="footer-links">
+      <a href="#como">Proceso</a>
+      <a href="#tasas">Tasas</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </div>
 </footer>
 
-<script src="app.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
